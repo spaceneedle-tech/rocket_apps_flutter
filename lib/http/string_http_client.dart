@@ -1,0 +1,2 @@
+
+//class StringHttpClient extends HttpClient {}
