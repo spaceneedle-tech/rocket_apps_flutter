@@ -11,11 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-rocket_apps_http:
-  git:
-    url: https://github.com/spaceneedl/rocket_apps_flutter.git
-    ref: main
-    path: src/rocket_apps_http
+  rocket_apps_http:
+    git:
+      url: https://github.com/spaceneedl/rocket_apps_flutter.git
+      ref: main
+      path: src/rocket_apps_http
     
 dev_dependencies:
   flutter_test:
