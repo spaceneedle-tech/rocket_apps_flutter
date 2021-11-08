@@ -11,6 +11,9 @@ class ViewModel extends Bindable {
     mover = Mover(context);
   }
 
+  int get state => get(property: "state");
+  set state(int value) => set(value, property: "state");
+
   Future? loaded() {}
 
   Future? didBack() {}

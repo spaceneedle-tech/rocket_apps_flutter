@@ -6,7 +6,7 @@ import 'package:rocket_apps_mvvm/foundation/viewmodel.dart';
 class View with RouteAware {
   static late RouteObserver<PageRoute> routeObserver;
 
-  late bool _isObservingRoute = false;
+  late bool isObservingRoute = false;
   late ViewModel viewModel;
 
   View() {
@@ -31,8 +31,8 @@ class View with RouteAware {
   build(BuildContext context, vm, child) {
     size = MediaQuery.of(context).size;
 
-    if (!this._isObservingRoute) {
-      this._isObservingRoute = true;
+    if (!this.isObservingRoute) {
+      this.isObservingRoute = true;
       routeObserver.subscribe(this, ModalRoute.of(context) as PageRoute);
     }
   }
