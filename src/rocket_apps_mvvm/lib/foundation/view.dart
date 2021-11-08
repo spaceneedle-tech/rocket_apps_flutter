@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:rocket_apps_flutter/app.dart';
-import 'package:rocket_apps_flutter/foundation/viewmodel.dart';
+import 'package:rocket_apps_mvvm/foundation/viewmodel.dart';
 
 class View with RouteAware {
+  static late RouteObserver<PageRoute> routeObserver;
+
   late bool _isObservingRoute = false;
   late ViewModel viewModel;
 
@@ -32,7 +33,7 @@ class View with RouteAware {
 
     if (!this._isObservingRoute) {
       this._isObservingRoute = true;
-      App.routeObserver!.subscribe(this, ModalRoute.of(context) as PageRoute);
+      routeObserver.subscribe(this, ModalRoute.of(context) as PageRoute);
     }
   }
 

@@ -1,6 +1,6 @@
 import 'dart:io' as IO;
 
-import 'package:rocket_apps_flutter/io/special_directory.dart';
+import 'package:rocket_apps_io/special_directory.dart';
 
 class File {
   //exists

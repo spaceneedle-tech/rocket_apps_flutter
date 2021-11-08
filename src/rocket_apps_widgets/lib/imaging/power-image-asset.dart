@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:rocket_apps_flutter/app.dart';
 
 // ignore: must_be_immutable
 class PowerImageAsset extends StatelessWidget {
@@ -38,9 +37,9 @@ class PowerImageAsset extends StatelessWidget {
     int? cacheHeight,
     Widget? loadingBuilder,
   }) : super(key: key) {
-    if (package == null) {
-      package = App.PackageName;
-    }
+    // if (package == null) {
+    //   package = App.PackageName;
+    // }
 
     if (padding == null) {
       padding = EdgeInsets.zero;

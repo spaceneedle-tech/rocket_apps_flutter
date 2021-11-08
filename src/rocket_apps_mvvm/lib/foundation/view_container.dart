@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:rocket_apps_flutter/binding/bind.dart';
-import 'package:rocket_apps_flutter/foundation/view.dart';
-import 'package:rocket_apps_flutter/foundation/viewmodel.dart';
+import 'package:rocket_apps_mvvm/binding/bind.dart';
+import 'package:rocket_apps_mvvm/foundation/view.dart';
+import 'package:rocket_apps_mvvm/foundation/viewmodel.dart';
 
 // ignore: must_be_immutable
 class ViewContainer<TView extends View, TViewModel extends ViewModel>

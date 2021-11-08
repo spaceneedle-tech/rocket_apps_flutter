@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:rocket_apps_flutter/app.dart';
 
 // ignore: must_be_immutable
 class PowerImageSvg extends StatelessWidget {
@@ -42,9 +41,9 @@ class PowerImageSvg extends StatelessWidget {
     if (padding == null) {
       padding = EdgeInsets.zero;
     }
-    if (package == null) {
-      package = App.PackageName;
-    }
+    // if (package == null) {
+    //   package = App.PackageName;
+    // }
 
     bool useAlignement = (left == null &&
         top == null &&

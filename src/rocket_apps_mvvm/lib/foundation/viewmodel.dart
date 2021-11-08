@@ -1,7 +1,7 @@
-import 'package:rocket_apps_flutter/binding/bindable.dart';
-import 'package:rocket_apps_flutter/movement/mover.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:rocket_apps_mvvm/binding/bindable.dart';
+import 'package:rocket_apps_mvvm/movement/mover.dart';
 
 class ViewModel extends Bindable {
   BuildContext context;

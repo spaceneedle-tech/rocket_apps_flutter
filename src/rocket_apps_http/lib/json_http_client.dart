@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:rocket_apps_flutter/http/http_client.dart';
-import 'package:rocket_apps_flutter/http/json_response.dart';
+import 'package:rocket_apps_http/http_client.dart';
+import 'package:rocket_apps_http/json_response.dart';
 
 class JsonHttpClient {
   late HttpClient _http;

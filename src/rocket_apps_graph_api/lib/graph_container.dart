@@ -1,5 +1,5 @@
-import 'package:rocket_apps_flutter/http/json_http_client.dart';
-import 'package:rocket_apps_flutter/http/json_response.dart';
+import 'package:rocket_apps_http/json_http_client.dart';
+import 'package:rocket_apps_http/json_response.dart';
 
 class GraphContainer {
   late String partition;

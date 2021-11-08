@@ -1,4 +1,4 @@
-import 'package:rocket_apps_flutter/graph/graph_container.dart';
+import 'package:rocket_apps_graph_api/graph_container.dart';
 
 class GraphResource {
   GraphContainer container;

@@ -1,7 +1,7 @@
 //on top of class PathProviderPlatform from path_provider_platform_interface.dart
 import 'dart:io' as IO;
 import 'package:path_provider/path_provider.dart';
-import 'package:rocket_apps_flutter/io/file.dart';
+import 'package:rocket_apps_io/file.dart';
 
 enum SpecialPath {
   Temp, // getTemporaryPath() Path to the temporary directory on the device that is not backed up and is suitable for storing caches of downloaded files.
