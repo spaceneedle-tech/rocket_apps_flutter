@@ -3,7 +3,7 @@ description: A straith to the point mvvm framework for Flutter
 
 publish_to: 'none'
 
-version: 0.2.0
+version: 0.3.0
 
 environment:
   sdk: ">=2.14.0 <3.0.0"
@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
 
   provider: ^6.0.1
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:

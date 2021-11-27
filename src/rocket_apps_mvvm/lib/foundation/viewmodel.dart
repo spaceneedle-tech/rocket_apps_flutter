@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:rocket_apps_mvvm/binding/bindable.dart';
 import 'package:rocket_apps_mvvm/movement/mover.dart';
 
@@ -10,6 +11,8 @@ class ViewModel extends Bindable {
   ViewModel(this.context) {
     mover = Mover(context);
   }
+
+  final services = GetIt.instance;
 
   int get state => get(property: "state");
   set state(int value) => set(value, property: "state");
