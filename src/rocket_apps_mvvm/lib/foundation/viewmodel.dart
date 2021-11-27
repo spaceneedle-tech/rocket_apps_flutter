@@ -12,7 +12,7 @@ class ViewModel extends Bindable {
     mover = Mover(context);
   }
 
-  final services = GetIt.instance;
+  GetIt get services => GetIt.instance;
 
   int get state => get(property: "state");
   set state(int value) => set(value, property: "state");
