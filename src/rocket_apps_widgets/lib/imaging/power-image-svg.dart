@@ -105,14 +105,6 @@ class PowerImageSvg extends StatelessWidget {
 
       // _container = _padding;
 
-      // return;
-      _container = Positioned(
-        left: left,
-        top: top,
-        right: right,
-        bottom: bottom,
-        child: _padding,
-      );
     }
   }
 
