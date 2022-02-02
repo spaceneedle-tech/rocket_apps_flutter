@@ -24,7 +24,10 @@ class ViewContainer<TView extends View, TViewModel extends ViewModel>
     return Bind<TViewModel>(
       create: (context) => viewModel,
       builder: (context, vm, child) {
-        return view.build(context, vm, child);
+        return view.build(
+          context,
+          vm,
+        );
       },
     );
   }
