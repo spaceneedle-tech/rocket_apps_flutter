@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:rocket_apps_mvvm/foundation/viewmodel.dart';
 
-class View with RouteAware {
+class View<T extends ViewModel> with RouteAware {
   static late RouteObserver<PageRoute> routeObserver;
 
   late bool isObservingRoute = false;
@@ -28,7 +26,7 @@ class View with RouteAware {
 
   void loaded() {}
 
-  build(BuildContext context, vm, child) {
+  build(BuildContext context, T vm) {
     size = MediaQuery.of(context).size;
 
     if (!this.isObservingRoute) {

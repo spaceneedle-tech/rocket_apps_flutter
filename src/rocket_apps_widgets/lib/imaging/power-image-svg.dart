@@ -87,32 +87,7 @@ class PowerImageSvg extends StatelessWidget {
           widthFactor: widthFactor,
           heightFactor: heightFactor);
     } else {
-      if (left == null) {
-        left = 0;
-      }
-
-      if (top == null) {
-        top = 0;
-      }
-
-      if (right == null) {
-        right = 0;
-      }
-
-      if (bottom == null) {
-        bottom = 0;
-      }
-
-      // _container = _padding;
-
-      // return;
-      _container = Positioned(
-        left: left,
-        top: top,
-        right: right,
-        bottom: bottom,
-        child: _padding,
-      );
+      _container = _padding;
     }
   }
 
